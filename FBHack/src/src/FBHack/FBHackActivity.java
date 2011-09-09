@@ -9,5 +9,9 @@ public class FBHackActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+        ProcessImage task = new ProcessImage(null);
+        task.execute();
+        
     }
 }
